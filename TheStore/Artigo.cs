@@ -8,6 +8,9 @@ namespace TheStore
 {
     class Artigo
     {
-        //ola Carlos
+        public int cod_artigo { get; set; }
+        public string nome { get; set; }
+        public double preco { get; set; }
+
     }
 }
