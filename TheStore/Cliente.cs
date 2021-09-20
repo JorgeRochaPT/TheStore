@@ -8,6 +8,6 @@ namespace TheStore
 {
     class Cliente
     {
-        //ola 
+        //ola Jose
     }
 }
