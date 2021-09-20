@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TheStore
 {
-    class Artigo
+    class Cliente
     {
     }
 }
