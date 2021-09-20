@@ -8,7 +8,7 @@ namespace TheStore
         {
             bool close = false;
 
-            static double pagamento( int codigo_cartao, int total_pontos)
+            static double pagamento(int codigo_cartao, int total_pontos)
             {
                 double total = 0;
                 int quantidade;
@@ -26,18 +26,18 @@ namespace TheStore
                         preço = 10;
                         Console.WriteLine("Quantidade");
                         quantidade = Convert.ToInt32(Console.ReadLine());
-                       
-                        
+
+
                         double pagamento = (quantidade * preço);
                         total = total + pagamento;
                         break;
                     case "2":
-                        
+
                         break;
                 }
 
-                
-                
+
+
 
                 return total;
             }
@@ -111,7 +111,7 @@ namespace TheStore
                     case "4":
 
 
-                        pagamento();
+                        //pagamento();
 
                         break;
                     case "5":
@@ -120,9 +120,9 @@ namespace TheStore
 
                 }
             } while (close == false);
-            
-                Environment.Exit(0);
-            
+
+            Environment.Exit(0);
+
         }
     }
 }
