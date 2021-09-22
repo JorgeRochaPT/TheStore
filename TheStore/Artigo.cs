@@ -15,60 +15,59 @@ namespace TheStore
         public int quantidade { get; set; }
 
     }
-    static void guardarproduto(int cod_artigo, string nome, double preco, int quantidade)
-    {
-        Console.WriteLine("Insira os dados do produto\n");
-        Console.Write("Codigo do produto: ");
-        cod_artigo = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Nome ");
-        nome = Console.ReadLine();
-        Console.Write("Preço: ");
-        preco = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Quantidade: ");
-        quantidade = Convert.ToInt32(Console.ReadLine());
+    //    static void guardarproduto(int cod_artigo, string nome, double preco, int quantidade)
+    //    {
+    //        Console.WriteLine("Insira os dados do produto\n");
+    //        Console.Write("Codigo do produto: ");
+    //        cod_artigo = Convert.ToInt32(Console.ReadLine());
+    //        Console.Write("Nome ");
+    //        nome = Console.ReadLine();
+    //        Console.Write("Preço: ");
+    //        preco = Convert.ToInt32(Console.ReadLine());
+    //        Console.Write("Quantidade: ");
+    //        quantidade = Convert.ToInt32(Console.ReadLine());
 
-    }
+    //    }
 
-    //funcao para guardar produto
-
-
-    //gravar os dados no ficheiro txt
-
-    string ficheiro = @"produtos.txt";
-    StreamWriter sw;
-if (File.Exists(ficheiro) == true )
-{
-    sw = File.AppendText(ficheiro);
-}
-else
-{
-    sw = File.CreateText(ficheiro);
-
-}
-string linha = num.ToString() + ";" + cod_artigo + ";" + nome;
-sw.WriteLine(linha);
-sw.Close();
+    //    //funcao para guardar produto
 
 
-// consultar dados do ficheiro
-static void verprodutos()
-{
-    string ficheiro = @"produtos.txt";
-    StreamReader sr;
-    if (File.Exists(ficheiro) == true)
-    {
-        Console.WriteLine("cod_prod\t\nome produto\tttt\t\");
-        sr = File.OpenText(ficheiro);
-        string linha = "";
-        while ((linha = sr.ReadLine()) != null)
-        {
+    //    //gravar os dados no ficheiro txt
 
-        }
-    }
-    else
-    {
-        Console.WriteLine("Nao existe nenhum ficheiro");
-    }
-}
+    //    string ficheiro = @"produtos.txt";
+    //    StreamWriter sw;
+    //if (File.Exists(ficheiro) == true )
+    //{
+    //    sw = File.AppendText(ficheiro);
+    //}
+    //else
+    //{
+    //    sw = File.CreateText(ficheiro);
 
+    //}
+    //string linha = num.ToString() + ";" + cod_artigo + ";" + nome;
+    //sw.WriteLine(linha);
+    //sw.Close();
+
+
+    //// consultar dados do ficheiro
+    //static void verprodutos()
+    //{
+    //    string ficheiro = @"produtos.txt";
+    //    StreamReader sr;
+    //    if (File.Exists(ficheiro) == true)
+    //    {
+    //        Console.WriteLine("cod_prod\t\nome produto\tttt\t\");
+    //        sr = File.OpenText(ficheiro);
+    //        string linha = "";
+    //        while ((linha = sr.ReadLine()) != null)
+    //        {
+
+    //        }
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine("Nao existe nenhum ficheiro");
+    //    }
+    //}
 }
